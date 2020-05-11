@@ -53,7 +53,7 @@
       // Register the toolbar button.
       if (editor.ui.addButton) {
         editor.ui.addButton('Nbsp_ShowHide', {
-          label: 'Show/Hide Non-breaking space',
+          label: 'Show/Hide Non-breaking spaces',
           command: 'ShowHideNbsp',
           icon: this.path + 'icons/nbsp_tools.png',
           toolbar: 'others',
@@ -71,7 +71,7 @@
 
       if (editor.ui.addButton) {
         editor.ui.addButton('Nbsp_Clear', {
-          label: 'Clear Non-breaking space',
+          label: 'Clear Non-breaking spaces',
           command: 'ClearNbsp',
           icon: this.path + 'icons/nbsp_tools_c.png',
           toolbar: 'others',
