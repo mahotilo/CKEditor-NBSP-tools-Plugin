@@ -1,20 +1,16 @@
 /** BASED ON
-* @file insert Non-Breaking Space for CKEditor
-* Copyright (C) 2016 Kevin Wenger of Antistatique
-* Create a command and enable the Ctrl+Space shortcut
-* to insert a non-breaking space in CKEditor
-* Also add a non-breaking space button
+* Non-Breaking Space for CKEditor Copyright (C) 2016 Kevin Wenger of Antistatique
 */
 
 
 (function ($, CKEDITOR) {
 
-  CKEDITOR.plugins.add('nbsp', {
-    icons: 'nbsp',
+  CKEDITOR.plugins.add('nbsp_tools', {
+    icons: 'nbsp_tools',
 //    hidpi: true,
 
     beforeInit: function (editor) {
-      editor.addContentsCss(this.path + 'css/ckeditor.nbsp.css')
+      editor.addContentsCss(this.path + 'css/ckeditor.nbsp_tools.css')
     },
     init: function (editor) {
       // Insert &nbsp; if Ctrl+Shift+Space is pressed:
@@ -59,7 +55,7 @@
         editor.ui.addButton('Nbsp_ShowHide', {
           label: 'Show/Hide Non-breaking space',
           command: 'ShowHideNbsp',
-          icon: this.path + 'icons/nbsp.png',
+          icon: this.path + 'icons/nbsp_tools.png',
           toolbar: 'others',
         })
       }
@@ -68,7 +64,7 @@
         editor.ui.addButton('Nbsp_Insert', {
           label: 'Insert Non-breaking space',
           command: 'insertNbsp',
-          icon: this.path + 'icons/nbsp_i.png',
+          icon: this.path + 'icons/nbsp_tools_i.png',
           toolbar: 'others',
         })
       }
@@ -77,7 +73,7 @@
         editor.ui.addButton('Nbsp_Clear', {
           label: 'Clear Non-breaking space',
           command: 'ClearNbsp',
-          icon: this.path + 'icons/nbsp_c.png',
+          icon: this.path + 'icons/nbsp_tools_c.png',
           toolbar: 'others',
         })
       }
