@@ -8,6 +8,9 @@ The plugin add three buttons to CKEditor:
 - Insert non-break space in text (Ctrl+Shift+Space)
 - Clear all non-break spaces in text (replace with plain spaces)
 
+#### Based on
+Non-Breaking Space for CKEditor  Copyright (C) 2016 Kevin Wenger of Antistatique
+
 ## Current Version 
 1.0
 
@@ -18,7 +21,6 @@ The plugin add three buttons to CKEditor:
 ## License
 GPL 2, for bundled thirdparty components see the respective subdirectories.
 
-**Based on** Non-Breaking Space for CKEditor  Copyright (C) 2016 Kevin Wenger of Antistatique
 
 ## Version history
 * v1.0 - Initial release 
