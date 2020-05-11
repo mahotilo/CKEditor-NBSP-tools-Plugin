@@ -13,7 +13,7 @@ The plugin add three buttons to CKEditor:
 1.0
 
 ## Demo
-![image](demo/nbsp.png)
+![image](demo/nbsp_tools.png)
 
 ## License
 GPL 2, for bundled thirdparty components see the respective subdirectories.
