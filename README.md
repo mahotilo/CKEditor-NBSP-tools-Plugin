@@ -12,7 +12,7 @@ The plugin add three buttons to CKEditor:
 Non-Breaking Space for CKEditor  Copyright (C) 2016 Kevin Wenger of Antistatique
 
 ## Current Version 
-1.0
+1.1
 
 ## Demo
 ![image](demo/nbsp_tools.png)
