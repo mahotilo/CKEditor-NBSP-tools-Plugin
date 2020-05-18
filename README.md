@@ -23,4 +23,5 @@ GPL 2, for bundled thirdparty components see the respective subdirectories.
 
 
 ## Version history
+* v1.1 - fix for nbsp in other spans
 * v1.0 - Initial release 

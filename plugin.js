@@ -31,7 +31,7 @@
 			var edata = editor.getData();
 			var ecommand = editor.getCommand('ShowHideNbsp');
 			if ( ecommand.state == CKEDITOR.TRISTATE_OFF ) {
-				var replaced_text = edata.replace(/<span.*?<\/span>|(&nbsp;)/g, '<span class="nbsp">&nbsp;</span>');
+				var replaced_text = edata.replace(/<span class="nbsp">.*?<\/span>|(&nbsp;)/g, '<span class="nbsp">&nbsp;</span>');
 				ecommand.setState(CKEDITOR.TRISTATE_ON)
 			} else {
 				var replaced_text = edata.replace(/<span class="nbsp">&nbsp;<\/span>/g, '&nbsp;');
