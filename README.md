@@ -1,7 +1,7 @@
 # CKEditor-NBSP-tools-Plugin
 
 ## About
-CKEditor toolkit to manage non-break spaces `&nbsp;` in text 
+CKEditor 4 toolkit to manage non-break spaces `&nbsp;` in text 
 
 The plugin add three buttons to CKEditor:
 - Show/Hide non-break spaces in text (nbsp's should be hidden before saving text)
@@ -9,7 +9,7 @@ The plugin add three buttons to CKEditor:
 - Clear all non-break spaces in text (replace with plain spaces)
 
 #### Based on
-Non-Breaking Space for CKEditor  Copyright (C) 2016 Kevin Wenger of Antistatique
+Non-Breaking Space for CKEditor. Copyright (C) 2016 Kevin Wenger of Antistatique
 
 ## Current Version 
 1.1
