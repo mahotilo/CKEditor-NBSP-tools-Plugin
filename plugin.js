@@ -10,7 +10,7 @@
 //    hidpi: true,
 
     beforeInit: function (editor) {
-      editor.addContentsCss(this.path + 'css/ckeditor.nbsp_tools.css')
+      editor.addContentsCss(this.path + 'css/nbsp_tools.css')
     },
     init: function (editor) {
       // Insert &nbsp; if Ctrl+Shift+Space is pressed:
