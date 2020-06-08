@@ -9,10 +9,10 @@ The plugin add three buttons to CKEditor:
 - Clear all non-break spaces in text (replace with plain spaces)
 
 #### Based on
-Non-Breaking Space for CKEditor. Copyright (C) 2016 Kevin Wenger of Antistatique
+Non-Breaking Space for CKEditor  Copyright (C) 2016 Kevin Wenger of Antistatique
 
 ## Current Version 
-1.1
+1.2
 
 ## Demo
 ![image](demo/nbsp_tools.png)
@@ -23,5 +23,6 @@ GPL 2, for bundled thirdparty components see the respective subdirectories.
 
 
 ## Version history
-* v1.1 - fix for nbsp in other spans
+* v1.2 - Changed the way a CSS file is included
+* v1.1 - Fix for nbsp in other spans
 * v1.0 - Initial release 

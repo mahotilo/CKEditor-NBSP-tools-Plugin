@@ -9,9 +9,9 @@
     icons: 'nbsp_tools',
 //    hidpi: true,
 
-    beforeInit: function (editor) {
-      editor.addContentsCss(this.path + 'css/nbsp_tools.css')
-    },
+	onLoad: function() {
+		CKEDITOR.document.appendStyleSheet(this.path + "css/nbsp_tools.css");
+	},
     init: function (editor) {
       // Insert &nbsp; if Ctrl+Shift+Space is pressed:
       editor.addCommand('insertNbsp', {
