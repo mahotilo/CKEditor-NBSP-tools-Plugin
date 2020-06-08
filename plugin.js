@@ -10,9 +10,12 @@
 //    hidpi: true,
 
 	onLoad: function() {
-		CKEDITOR.document.appendStyleSheet(this.path + "css/nbsp_tools.css");
-	},
+        CKEDITOR.addCss('.cke_nbsp{background-color: rgba(0, 123, 198, 0.4);}');
+    },
+
     init: function (editor) {
+	  editor.addContentsCss( this.path + 'css/nbsp_tools.css' );    	
+    	
       // Insert &nbsp; if Ctrl+Shift+Space is pressed:
       editor.addCommand('insertNbsp', {
         exec: function (editor) {
@@ -20,7 +23,7 @@
 			if ( ecommand.state == CKEDITOR.TRISTATE_OFF ) {
 				editor.insertHtml('&nbsp;')
 			} else {
-				editor.insertHtml('<span class="nbsp">&nbsp;</span>')
+				editor.insertHtml('<span class="cke_nbsp">&nbsp;</span>')
 			}	
         }
       })
@@ -31,10 +34,10 @@
 			var edata = editor.getData();
 			var ecommand = editor.getCommand('ShowHideNbsp');
 			if ( ecommand.state == CKEDITOR.TRISTATE_OFF ) {
-				var replaced_text = edata.replace(/<span class="nbsp">.*?<\/span>|(&nbsp;)/g, '<span class="nbsp">&nbsp;</span>');
+				var replaced_text = edata.replace(/<span class="cke_nbsp">.*?<\/span>|(&nbsp;)/g, '<span class="cke_nbsp">&nbsp;</span>');
 				ecommand.setState(CKEDITOR.TRISTATE_ON)
 			} else {
-				var replaced_text = edata.replace(/<span class="nbsp">&nbsp;<\/span>/g, '&nbsp;');
+				var replaced_text = edata.replace(/<span class="cke_nbsp">&nbsp;<\/span>/g, '&nbsp;');
 				ecommand.setState(CKEDITOR.TRISTATE_OFF)
 			}
 			editor.setData(replaced_text);        	
@@ -44,7 +47,7 @@
       editor.addCommand('ClearNbsp', {
         exec: function (editor) {
 			var edata = editor.getData();
-			var replaced_text = edata.replace(/<span class="nbsp">&nbsp;<\/span>/g, ' ');
+			var replaced_text = edata.replace(/<span class="cke_nbsp">&nbsp;<\/span>/g, ' ');
 			replaced_text = replaced_text.replace(/&nbsp;/g, ' ');
 			editor.setData(replaced_text);        	
         }

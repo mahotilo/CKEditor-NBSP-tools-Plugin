@@ -23,6 +23,6 @@ GPL 2, for bundled thirdparty components see the respective subdirectories.
 
 
 ## Version history
-* v1.2 - Changed the way a CSS file is included
+* v1.2 - style .cke_nbsp for nbsp's span is now defined in CKE onLoad event to support both inline and standalone CKE
 * v1.1 - Fix for nbsp in other spans
 * v1.0 - Initial release 
