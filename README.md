@@ -1,4 +1,4 @@
-# CKEditor-NBSP-tools-Plugin
+# [CKEditor-NBSP-tools-Plugin](https://github.com/mahotilo/CKEditor-NBSP-tools-Plugin) - buttons to manage `&nbsp;`
 
 ## About
 CKEditor 4 plugin for managing non-break spaces `&nbsp;` in text 
